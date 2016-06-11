@@ -173,8 +173,24 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606112228137_initialModel.cs" />
+    <Compile Include="Migrations\201606112228137_initialModel.Designer.cs">
+      <DependentUpon>201606112228137_initialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606112250313_CreateGigTable.cs" />
+    <Compile Include="Migrations\201606112250313_CreateGigTable.Designer.cs">
+      <DependentUpon>201606112250313_CreateGigTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606112258175_OverrideConventionsForGigsAndGenres.cs" />
+    <Compile Include="Migrations\201606112258175_OverrideConventionsForGigsAndGenres.Designer.cs">
+      <DependentUpon>201606112258175_OverrideConventionsForGigsAndGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Gig.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -245,6 +261,17 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201606112228137_initialModel.resx">
+      <DependentUpon>201606112228137_initialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606112250313_CreateGigTable.resx">
+      <DependentUpon>201606112250313_CreateGigTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606112258175_OverrideConventionsForGigsAndGenres.resx">
+      <DependentUpon>201606112258175_OverrideConventionsForGigsAndGenres.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
