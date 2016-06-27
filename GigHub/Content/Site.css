@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 20px;
 }
 
@@ -22,3 +22,228 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.field-validation-error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Bootstrap Overrides*/
+
+.popover{
+    box-shadow:none;
+    -webkit-box-shadow: none;
+}
+.navbar-inverse {
+    background-color: #ff4342;
+    border-color: #ff4342;
+}
+
+    .navbar-inverse .navbar-brand {
+        color: #ffffff;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #ffffff;
+    }
+
+
+.body {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.428571429;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    font-size: 17px;
+    height: 44px;
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+}
+
+    .form-control:focus {
+        border-color: #ff4342;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+
+.btn {
+    /*font-size: 17px;
+    padding: 7px 20px;*/
+    -ms-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: rgba(205, 40, 39, 0.55);
+}
+
+.dropdown-menu {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.field-validation-error {
+    color: red;
+    font-weight: bold;
+}
+
+/*Page Level Styles*/
+
+.gigs {
+    list-style: none;
+}
+
+    .gigs > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+        .gigs > li .details {
+            position: absolute;
+            top: 0;
+            left: 70px;
+        }
+
+    .gigs li .date {
+        background: red;
+        color: white;
+        text-align: center;
+        width: 60px;
+        -ms-border-radius: 8px;
+        border-radius: 8px;
+    }
+
+    .gigs > li .date .month {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 2px 6px;
+    }
+
+    .gigs > li .date .day {
+        background: #f7f7f7;
+        color: #333;
+        font-size: 20px;
+        padding: 6px 12px;
+    }
+
+    .gigs > li .details .artist {
+        font-weight: bold;
+        display: block;
+    }
+
+    .gigs > li .details .genre {
+        font-size: 14px;
+    }
+
+    .gigs > li .actions {
+        font-size: 15px;
+        display: none;
+    }
+
+    .gigs > li :hover .actions {
+        display: block;
+    }
+
+    .genre{
+        display: block;
+        margin-bottom: 4px;
+    }
+
+.voffset {
+    margin-top: 2px;
+}
+
+.voffset1 {
+    margin-top: 5px;
+}
+
+.voffset2 {
+    margin-top: 10px;
+}
+
+.voffset3 {
+    margin-top: 20px;
+}
+
+.voffset4 {
+    margin-top: 40px;
+}
+
+.voffset5 {
+    margin-top: 80px;
+}
+
+.navbar-inverse .notifications {
+    position: relative;
+}
+
+    .navbar-inverse .notifications .badge {
+        position: absolute;
+        top: 8px;
+        right: 0;
+        background: #a80a0a;
+    }
+
+.popover-notifications ul.notifications {
+    list-style: none;
+    padding-left: 0;
+}
+
+    .popover-notifications ul.notifications > li {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 10px;
+    }
+
+        .popover-notifications ul.notifications > li:last-child {
+            border-bottom: none;
+        }
+
+        .popover-notifications .popover-content{
+            padding: 0;
+        }
+
+        .popover-notifications ul.notifications .highlight{
+            font-weight:bold;
+        }
+
+        .popover{
+
+        }
+
+        #searchGigs{
+            width:300px;
+        }

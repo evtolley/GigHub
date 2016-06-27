@@ -1,0 +1,13 @@
+﻿@model IEnumerable<GigHub.Models.ApplicationUser>
+
+<h2>Artists I Follow</h2>
+
+<ul class="list-group">
+    @foreach (var artist in Model)
+    {
+        <li class="list-group-item">
+            @artist.Name
+        </li>
+    }
+</ul>
+
